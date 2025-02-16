@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dough Re Mi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dough Re Mi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+      <div class="Logo">
+        <li><a href="home.html"><img src="Logo.png" alt="Home"></a></li>
+      </div>
+        <ul>
+            <li><a href="home.html"><img src="home.png" alt="Home">Home</a></li>
+            <li><a href="menu.html"><img src="menu.png" alt="Menu">Menu</a></li>
+            <li><a href="about.html"><img src="info.png" alt="About">About</a></li>
+            <li><a href="contact.html"><img src="contact.png" alt="Contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="order.html"><img src="order.png" alt="Order">Order</a>
+              <div class="dropdown-content">
+                  <a href="myorders.html"><img src="shopping-cart.png" alt="Myorders">My Order(s)</a>
+              </div>
+          </li>
+        </ul>
+        <div class="language-selector">
+            <button>EN</button>
+            <button>FR</button>
+        </div>
+    </div>
+
+<body>
+
+  <header>
+    <h1>Place Your Order</h1>
+  </header>
+
+  <section class="menu">
+    <h3>Menu</h3>
+    <form id="orderForm">
+      <div class="menu-item">
+        <label for="item1">Banana Bread</label>
+        <input type="number" id="item1" name="item1" min="0" value="0">
+        <span>$4.00 each</span>
+        <ul>
+          <button>Regular</button>
+          <button>Chocolate Chip</button>
+          <button>Blueberry</button>
+        </ul>
+      </div>
+
+      <div class="menu-item">
+        <label for="item2">Muffin</label>
+        <input type="number" id="item2" name="item2" min="0" value="0">
+        <span>$2.00 each</span>
+        <ul>
+          <button>Vanilla</button>
+          <button>Chocolate Chip</button>
+          <button>Double Chocolate</button>
+          <button>Blueberry</button>
+          <button>Carrot</button>
+        </ul>
+      </div>
+
+      <div class="menu-item">
+        <label for="item3">Pie</label>
+        <input type="number" id="item3" name="item3" min="0" value="0">
+        <span>$5.30 each</span>
+        <ul>
+          <button>Regular</button>
+          <button>Blueberry</button>
+          <button>Strawberry</button>
+        </ul>
+      </div>
+
+      <div class="menu-item">
+        <label for="item4">Croissant</label>
+        <input type="number" id="item4" name="item4" min="0" value="0">
+        <span>$6.00 each</span>
+        <ul>
+          <button>Regular</button>
+          <button>Chocolate</button>
+        </ul>
+      </div>
+
+      <section class="Package options">
+        <h3>Package options</h3>
+        <form id="orderPackage">
+          <div class="package-item">
+            <label for="item1">Half a Dozen Pack:</label> <span>$12.00</span> <button>Select</button>
+            <h4>6 muffins, pies, banana bread, and/or croissants, etc.</h4>
+          </div>
+
+        <form id="orderPackage">
+          <div class="package-item">
+            <label for="item2">Dozen Pack:</label> <span>$22.00</span> <button>Select</button>
+            <h4>12 muffins, pies, banana bread, and/or croissants, etc.</h4>
+          </div>
+
+        <form id="orderPackage">
+          <div class="package-item">
+            <label for="item3">Slice of a pie:</label> <span>$5.95</span> <button>Select</button>
+            <h4>Specific amount of a slice of any pie.</h4>
+          </div>
+
+        <form id="orderPackage">
+          <div class="package-item">
+            <label for="item4">Mini pies:</label> <span>$8.50</span> <button>Select</button>
+            <h4>Mini version of pies. 6 in each selection</h4>
+          </div>
+    
+  
+
+      <section class="customer-info">
+        <h2>Your Information</h2>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Your Phone Number</label>
+        <input type="text" id="phone" name="phone" required>
+      </section>
+
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <ul id="summary">
+        </ul>
+        <p id="totalPrice">Total: $0.00</p>
+      </section>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bakery Name. All rights reserved.</p>
+  </footer>
+
+  <script src="order.js"></script>
+
+</body>
+</html>
