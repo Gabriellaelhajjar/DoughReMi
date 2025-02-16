@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Dough Re Mi</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function switchLanguage(lang) {
-            // Redirect or reload with a language parameter
-            if (lang === 'EN') {
-                window.location.href = window.location.pathname + '?lang=en';
-            } else {
-                window.location.href = window.location.pathname + '?lang=fr';
-            }
-        }
-    </script>
 </head>
 
 <head>
@@ -50,8 +40,9 @@
           </li>
         </ul>
         <div class="language-selector">
-            <button onclick="switchLanguage('EN')">EN</button>
-            <button onclick="switchLanguage('FR')">FR</button>            
+            <button><a href="about.html" alt="About">EN</a></button>
+            <button><a href="aboutfr.html" alt="About">FR</a></button>   
+
         </div>
     </div>
 
