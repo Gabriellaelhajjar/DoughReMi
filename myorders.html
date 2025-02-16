@@ -25,8 +25,9 @@
           </li>
         </ul>
         <div class="language-selector">
-            <button>EN</button>
-            <button>FR</button>
+            <button><a href="myorders.html" alt="Myorders">EN</a></button>
+            <button><a href="myordersfr.html" alt="Myorders">FR</a></button>   
+  
         </div>
     </div>
 
@@ -38,14 +39,12 @@
 
     <section class="order-status">
 
-        <h1 id="page-title">My Order(s)</h1>
-        <p id="order-number-label">Order number:</p>
-        <p id="order-name-label">Order name (Name under the order):</p>
-        <p id="order-status-label">Order status: In preparation, or Ready for pick up</p>
-        <p id="estimated-wait-label">Estimated wait time:</p>
 
         <h1>My Order(s)</h1>
         <form>
+            <h2>Track Your Order</h2>
+            <p id="order-number-display">Loading order details...</p>
+
             <label for="order-number">Order number:</label>
             <input type="text" id="order-number" name="order-number" required>
 
@@ -61,4 +60,8 @@
         </form>
     </section>
 </body>
+<footer>
+    <p>&copy; 2025 Dough Re Mi. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </html>
