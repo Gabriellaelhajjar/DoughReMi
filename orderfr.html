@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dough Re Mi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dough Re Mi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+      <div class="Logo">
+        <li><a href="index.html"><img src="Logo.png" alt="Home"></a></li>
+      </div>
+        <ul>
+            <li><a href="index.html"><img src="home.png" alt="Home">Home</a></li>
+            <li><a href="menu.html"><img src="menu.png" alt="Menu">Menu</a></li>
+            <li><a href="about.html"><img src="info.png" alt="About">About</a></li>
+            <li><a href="contact.html"><img src="contact.png" alt="Contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="order.html"><img src="order.png" alt="Order">Order</a>
+              <div class="dropdown-content">
+                  <a href="myorders.html"><img src="shopping-cart.png" alt="Myorders">My Order(s)</a>
+              </div>
+          </li>
+        </ul>
+        <div class="language-selector">
+          <button><a href="order.html" alt="Order">EN</a></button>
+          <button><a href="orderfr.html" alt="Order">FR</a></button>   
+
+      </div>
+    </div>
+
+<body>
+
+  <header>
+    <h1>Placez Votre Commande</h1>
+  </header>
+
+  <section class="menu">
+    <section class="customer-info">
+      <h3>Votre Information</h3>
+      <label for="name">Votre Nom</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Votre Courriel</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Votre Numéro de Téléphone</label>
+      <input type="text" id="phone" name="phone" required>
+    </section>
+
+    <h3>Menu</h3>
+    <form id="orderForm">
+      <div class="menu-item">
+        <label for="item1">Pain aux Bananes</label>
+        <input type="number" id="item1" name="item1" min="0" value="0">
+        <span>$4.00 chacun</span>
+        <ul>
+          <button>Régulier</button>
+          <button>Chocolate Chip</button>
+          <button>Bleuet</button>
+        </ul>
+      </div>
+
+      <div class="menu-item">
+        <label for="item2">Muffin</label>
+        <input type="number" id="item2" name="item2" min="0" value="0">
+        <span>$2.00 chacun</span>
+        <ul>
+          <button>Vanille</button>
+          <button>Chocolate Chip</button>
+          <button>Double chocolat</button>
+          <button>Bleuet</button>
+          <button>Carotte</button>
+        </ul>
+      </div>
+
+      <div class="menu-item">
+        <label for="item3">Tarte</label>
+        <input type="number" id="item3" name="item3" min="0" value="0">
+        <span>$5.30 chacun</span>
+        <ul>
+          <button>Régulier</button>
+          <button>Bleuet</button>
+          <button>Fraise</button>
+        </ul>
+      </div>
+
+      <div class="menu-item">
+        <label for="item4">Croissant</label>
+        <input type="number" id="item4" name="item4" min="0" value="0">
+        <span>$6.00 chacun</span>
+        <ul>
+          <button>Régulier</button>
+          <button>Chocolat</button>
+        </ul>
+      </div>
+
+      <section class="Package options">
+        <h3>Options du Paquet</h3>
+        <form id="orderPackage">
+          <div class="package-item">
+            <label for="item1">Paquet d'une Demi-Douzaine :</label> <span>$12.00</span> <button>Sélectionner</button>
+            <h4>6 muffins, tartes, banana bread, et/ou croissants, etc.</h4>
+          </div>
+
+        <form id="orderPackage">
+          <div class="package-item">
+            <label for="item2">Paquet d'une Douzaine :</label> <span>$22.00</span> <button>Sélectionner</button>
+            <h4>12 muffins, tartes, banana bread, et/ou croissants, etc.</h4>
+          </div>
+
+        <form id="orderPackage">
+          <div class="package-item">
+            <label for="item3">Tranche de Tarte :</label> <span>$5.95</span> <button>Sélectionner</button>
+            <h4>Montant spécifique d'une part de n'importe quelle tarte.</h4>
+          </div>
+
+        <form id="orderPackage">
+          <div class="package-item">
+            <label for="item4">Mini-tartes :</label> <span>$8.50</span> <button>Sélectionner</button>
+            <h4>Version mini des tartes. 6 dans chaque sélection</h4>
+          </div>
+
+      <section class="order-summary">
+        <h3>Résumé de l'Ordre</h3>
+        <ul id="summary">
+        </ul>
+        <p id="totalPrice">Total: $0.00</p>
+      </section>
+
+      <button type="submit">Placer la Commande</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bakery Name. Tous droits réservés.</p>
+  </footer>
+
+  <script src="order.js"></script>
+
+</body>
+</html>
