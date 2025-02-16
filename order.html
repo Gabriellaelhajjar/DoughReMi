@@ -13,6 +13,7 @@
     <title>About - Dough Re Mi</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="navbar">
       <div class="Logo">
@@ -31,9 +32,10 @@
           </li>
         </ul>
         <div class="language-selector">
-            <button>EN</button>
-            <button>FR</button>
-        </div>
+          <button><a href="order.html" alt="Order">EN</a></button>
+          <button><a href="orderfr.html" alt="Order">FR</a></button>   
+
+      </div>
     </div>
 
 <body>
@@ -43,6 +45,18 @@
   </header>
 
   <section class="menu">
+    <section class="customer-info">
+      <h3>Your Information</h3>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Your Phone Number</label>
+      <input type="text" id="phone" name="phone" required>
+    </section>
+
     <h3>Menu</h3>
     <form id="orderForm">
       <div class="menu-item">
@@ -115,23 +129,9 @@
             <label for="item4">Mini pies:</label> <span>$8.50</span> <button>Select</button>
             <h4>Mini version of pies. 6 in each selection</h4>
           </div>
-    
-  
-
-      <section class="customer-info">
-        <h2>Your Information</h2>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Your Phone Number</label>
-        <input type="text" id="phone" name="phone" required>
-      </section>
 
       <section class="order-summary">
-        <h2>Order Summary</h2>
+        <h3>Order Summary</h3>
         <ul id="summary">
         </ul>
         <p id="totalPrice">Total: $0.00</p>
